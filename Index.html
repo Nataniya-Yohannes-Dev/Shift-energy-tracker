@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shift Energy Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Shift Tracker</h1>
+
+<label>Shift Hours:</label>
+<input id="hours" type="text">
+
+<label>Energy Level (1-5):</label>
+<input id="energy" type="number" min="1" max="5">
+
+<label>Were you late?</label>
+<select id="late">
+    <option>No</option>
+    <option>Yes</option>
+</select>
+
+<button onclick="saveShift()">Save Shift</button>
+
+<h2>Saved Shifts</h2>
+<ul id="list"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
